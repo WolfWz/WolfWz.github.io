@@ -1,0 +1,117 @@
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #ccc;
+    --pimary-color: #10eba4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+    padding: 16px 16px;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-half {
+    width: 50%;
+    padding: 16px 16px;
+}
+
+.grid__column-thir {
+    width: calc(100% / 3);
+    padding: 16px 16px;
+}
+
+.grid__column-four {
+    padding: 16px 16px;
+    width: calc(100% / 4);
+}
+
+.p-t-b-16 {
+    padding: 16px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* keyframe */
+@keyframes slider {
+    from {
+        transform: translateX(0);
+        transform: scale(0);
+    }
+    to {
+        transform: translateX(100%);
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes move-chevron {
+    25% {
+    opacity: 1;
+       }
+    33.3% {
+    opacity: 1;
+    transform: translateY(2rem);
+    }
+    66.6% {
+    opacity: 1;
+    transform: translateY(5rem);
+    }
+    100% {
+    opacity: 0;
+    transform: translateY(6rem) scale(0.5);
+    }
+}
+
+@keyframes moveTop {
+    0%   {
+        background-color: #fff; left: 0; top: 0;
+        background-size: 0;
+    }
+    100%  {
+        background-color: #fff; bottom: 0; right: 0;
+        background-size: 100%;
+    }
+}
+
+@keyframes bookOpen {
+    0%   {
+        transform: scale(1);
+    }
+    100%  {
+        transform: scale(0);
+    }
+}
