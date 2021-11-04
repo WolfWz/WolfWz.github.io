@@ -45,7 +45,7 @@
         background-color: rgba(0, 0, 0, 0.9);
         color: var(--black-color);
         display: none;
-        will-change: scale;
+        will-change: scale opacity;
         transform-origin: top right;
         animation: zoom linear 0.25s;
         z-index: 99;
