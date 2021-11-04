@@ -570,16 +570,15 @@
 }
 
 .footer {
-    height: 220px;
-    display: flex;
     background-color: var(--black-color);
     align-items: center;
+    padding: 16px 0;
 }
 
 .footer__container {
     display: flex;
-    height: 220px;
     padding: 0 16px;
+    background-color: var(--black-color);
     color: var(--while-color);
 }
 
