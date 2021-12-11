@@ -1,8 +1,8 @@
 :root {
     --while-color: #fff;
     --black-color: #000;
-    --text-color: #ccc;
-    --pimary-color: #10eba4;
+    --text-color: #6c757d;
+    --pimary-color: #0077b6;
 }
 
 * {
@@ -49,77 +49,11 @@ html {
     width: calc(100% / 4);
 }
 
-.p-t-b-16 {
-    padding: 16px 0;
-}
-
-button {
-    cursor: pointer;
-}
-
 /* keyframe */
-@keyframes slider {
-    from {
-        transform: translateX(0);
-        transform: scale(0);
-    }
-    to {
-        transform: translateX(100%);
-        transform: scale(1);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes move-chevron {
-    25% {
-    opacity: 1;
-       }
-    33.3% {
-    opacity: 1;
-    transform: translateY(2rem);
-    }
-    66.6% {
-    opacity: 1;
-    transform: translateY(5rem);
-    }
-    100% {
-    opacity: 0;
-    transform: translateY(6rem) scale(0.5);
-    }
-}
-
-@keyframes moveTop {
-    0%   {
-        background-color: #fff; left: 0; top: 0;
-        background-size: 0;
-    }
-    100%  {
-        background-color: #fff; bottom: 0; right: 0;
-        background-size: 100%;
-    }
-}
-
-@keyframes bookOpen {
-    0%   {
-        transform: scale(1);
-    }
-    100%  {
-        transform: scale(0);
-    }
-}
-
-@keyframes zoom {
+@keyframes notify {
     from {
         transform: scale(0);
-        opacity: 0;
+        opacity: 0.4;
     }
     to {
         transform: scale(1);
