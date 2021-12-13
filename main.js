@@ -1,3 +1,11 @@
+function reSize() {
+    if (screen.width <= 699) {
+        return window.location = 'mobile.html';
+    }
+}
+
+reSize()
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 // Slider
@@ -57,4 +65,4 @@ window.addEventListener("scroll", function() {
         $('.header').style.background =
         "linear-gradient(to bottom, rgba(2,62,138,0.8), rgba(0,180,216,0.8))";
     }
-}); 
+});
